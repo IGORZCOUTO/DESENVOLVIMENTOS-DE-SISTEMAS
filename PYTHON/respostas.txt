@@ -1,0 +1,46 @@
+1
+CREATE TABLE funcionarios(
+codFunc NUMBER(3) PRIMARY KEY,
+nomeFunc VARCHAR2(50) NOT NULL,
+salario NUMBER(10,2) NOT NULL
+);
+
+DESC funcionarios;
+2
+ALTER TABLE funcionarios MODIFY nomeFunc VARCHAR(70);
+DESC funcionarioS;
+3
+ALTER TABLE funcionarios MODIFY telefone NUMBER(12);
+DESC funcionarioS;
+
+4
+ALTER TABLE funcionarios MODIFY salario NULL;
+DESC funcionarioS;
+
+5
+ALTER TABLE funcionarios ADD email VARCHAR(30);
+DESC funcionarioS;
+
+6
+ALTER TABLE funcionarios RENAME COLUMN salario to sal;
+DESC funcionarioS;
+
+7 
+ALTER TABLE funcionarios RENAME to colaborador;
+DESC colaborador;
+
+8
+ALTER TABLE colaborador ADD idade NUMBER(16) CHECK (idade>=16);
+DESC colaborador;
+
+9
+ALTER TABLE colaborador ADD dtAdmissao DATE DEFAULT SYDATE;
+DESC colaborador;
+
+10
+ALTER TABLE colaborador DROP COLUMN telefone; 
+DESC colaborador;
+
+11
+DROP TABLE colaborador;
+DESC colaborador;
