@@ -1,5 +1,4 @@
 PYTHON PRATICA 3
-PYTHON PRATICA 3
 1º
 def multiplicacao():
     num_inteiro=int(input("insira seu primeiro número:"))
